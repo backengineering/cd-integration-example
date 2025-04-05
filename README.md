@@ -1,6 +1,6 @@
 # Example LLVM-MSVC Module Integration
 
-This repository demonstrates how native C/C++ functions can be injected into a Windows PE executable (`HelloWorld.exe`) using our [LLVM-MSVC](https://github.com/backengineering/llvm-msvc) SDK. It complements [this blog post](#) which walks through the technical details of function injection, symbol registration, and runtime execution.
+This repository demonstrates how native C/C++ functions can be injected into a Windows PE executable (`HelloWorld.exe`) using our [LLVM-MSVC](https://github.com/backengineering/llvm-msvc) SDK. It complements [this blog post](https://codedefender.io/blog/2025/03/27) which walks through the technical details of function injection, symbol registration, and runtime execution.
 
 > Both the original and modified `.exe` files are included for comparison. No obfuscation is applied for ease of analysis purposes. However, we are fully capable of obfuscating any of the functions in the original binary and functions injected into the binary.
 
