@@ -1,6 +1,6 @@
 # Example LLVM-MSVC Module Integration
 
-This repository demonstrates how native C/C++ functions can be injected into a Windows PE executable (`HelloWorld.exe`) using our [CodeDefender](https://codedefender.io) SDK. It complements [this blog post](#) which walks through the technical details of function injection, symbol registration, and runtime execution.
+This repository demonstrates how native C/C++ functions can be injected into a Windows PE executable (`HelloWorld.exe`) using our [LLVM-MSVC](https://github.com/backengineering/llvm-msvc) SDK. It complements [this blog post](#) which walks through the technical details of function injection, symbol registration, and runtime execution.
 
 > Both the original and modified `.exe` files are included for comparison.
 
@@ -54,7 +54,7 @@ EXPORT_C void* init_entry_point(void* a1, void* a2, void* a3) {
 }
 ```
 
-### About the CodeDefender SDK
+### About the LLVM-MSVC SDK
 
 We provide a robust SDK that allows you to develop and inject C/C++ code into existing binaries — ideal for:
 
@@ -64,6 +64,4 @@ We provide a robust SDK that allows you to develop and inject C/C++ code into ex
 - Fuzzing Harnesses
 - Runtime Analysis
 
-The SDK handles symbol resolution, init table registration, and supports workflows across LLVM and MSVC toolchains. You can do much more than just execute functions at the startup of a program.
-
-If you're building advanced software protection mechanisms and want to integrate native code at a binary level, we’d love to talk.
+The SDK handles symbol resolution, init table registration, and supports C/C++/ASM workflows through our LLVM-MSVC toolchains. You can do much more than just execute functions at the startup of a program. If you're building advanced software protection mechanisms and want to integrate native code at a binary level, we’d love to talk.
